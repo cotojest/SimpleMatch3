@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
-
+public class Match3Manager : MonoBehaviour {
+	[SerializeField]
+	Board board;
 	// Use this for initialization
 	void Start () {
-		
+		InitGame ();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void InitGame() {
+		board.Fill ();
 	}
 }

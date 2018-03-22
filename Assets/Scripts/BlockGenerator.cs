@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockGenerator : BlockSupplier {
+public class BlockGenerator : MonoBehaviour, IBlockSupplier {
 	[SerializeField]
 	Block[] blockPrefabs;
-
+	[SerializeField]
 	Slot[] receivers;
 	Block preparedBlock;
 
-	void Start() {
-		hasBlock = true;
+	void Awake() {
 		preparedBlock = GenerateBlock ();
+		foreach (Slot s in receivers) {
+			s.OnContentEmpty.AddListener (() => CheckReceivers());
+		}
 	}
 
 	public void OnDrawGizmos() {
@@ -19,10 +21,22 @@ public class BlockGenerator : BlockSupplier {
 		Gizmos.DrawWireCube (transform.position, Vector3.one);
 	}
 
-	public override Block GiveBlock() {
-		Block toReturn = preparedBlock;
+	public bool CheckReceivers() {
+		bool generatedBlocks = false;
+		foreach (Slot s in receivers) {
+			if (s.state == Slot.State.Empty) {
+				GiveBlock(s);
+				Debug.Log ("give");
+				generatedBlocks = true;	
+			}
+		}
+		return generatedBlocks;
+	}
+
+	public void GiveBlock(Slot receiver) {
+		Block blockToGive = preparedBlock;
 		preparedBlock = GenerateBlock ();
-		return toReturn;
+		receiver.content = blockToGive;
 	}
 
 	Block GenerateBlock() {
