@@ -5,14 +5,15 @@ using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
 public class Slot : MonoBehaviour, IBlockSupplier {
-	[SerializeField]
-	public Slot[] verticalNeighbours;
-	[SerializeField]
-	public Slot[] horizontalNeighbours;
-	[SerializeField]
+	public Slot up;
+	public Slot down;
+	public Slot left;
+	public Slot right;
 	public Slot[] receivers;
 	EventTrigger eventTrigger;
 	public UnityEvent OnContentEmpty;
+	public UnityEvent OnBlockDestroyed;
+	public UnityEvent OnReady;
 	public State state;
 
 	public Block content {
@@ -24,8 +25,9 @@ public class Slot : MonoBehaviour, IBlockSupplier {
 			if (value != null) {
 				FallingAnimation ();
 			} else {
+				Debug.Log (state);
 				state = State.Empty;
-				OnContentEmpty.Invoke ();
+				OnContentEmpty.Invoke();
 			}
 		}
 	}
@@ -42,23 +44,30 @@ public class Slot : MonoBehaviour, IBlockSupplier {
 
 	public void Awake() {
 		state = State.Empty;
+		foreach (Slot s in receivers) {
+			s.OnContentEmpty.AddListener(() => CheckReceivers());
+		}
 	}
 
 	public void DestroyContent() {
-		GameObject toDestroy = content.gameObject;
-		content = null;
+		state = State.WaitingForDestroyAnimation;
+		content.DestroyAnimation (() => {
+			content = null;
+		});
 	}
 		
 	private void FallingAnimation() {
 		state = State.WaitingForBlockAnimation;
 		LeanTween.move (content.gameObject, transform.position, 0.3f)
-			.setEaseOutCirc().setOnComplete(FallingAnimationComplete);
+			.setEaseOutSine().setOnComplete(FallingAnimationComplete);
 
 	}
 
 	private void FallingAnimationComplete() {
-		state = State.BlockReady;
-		CheckReceivers ();
+		state = Slot.State.BlockReady;
+		if (!CheckReceivers ()) {
+			OnReady.Invoke ();
+		};
 	}
 
 	private void AddEventTriggerEntry(EventTriggerType eventType, UnityAction<BaseEventData> action) {
@@ -69,20 +78,21 @@ public class Slot : MonoBehaviour, IBlockSupplier {
 	}
 		
 	public bool CheckReceivers() {
-		bool generatedBlocks = false;
-		foreach (Slot s in receivers) {
-			if (s.state == Slot.State.Empty) {
-				GiveBlock(s);
-				return true;
+		if (state == State.BlockReady) {
+			foreach (Slot s in receivers) {
+				if (s.state == Slot.State.Empty) {
+					GiveBlock (s);
+					return true;
+				}
 			}
 		}
 		return false;
 	}
-
+		
 	private void GiveBlock(Slot receiver) {
 		receiver.content = content;
 		content = null;
 	}
 
-	public enum State {BlockReady, WaitingForBlockAnimation, Empty}
+	public enum State {Empty, BlockReady, WaitingForBlockAnimation, WaitingForDestroyAnimation}
 }

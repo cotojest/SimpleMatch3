@@ -15,7 +15,6 @@ public class BlockGenerator : MonoBehaviour, IBlockSupplier {
 			s.OnContentEmpty.AddListener (() => CheckReceivers());
 		}
 	}
-
 	public void OnDrawGizmos() {
 		Gizmos.color = Color.yellow;
 		Gizmos.DrawWireCube (transform.position, Vector3.one);
@@ -26,7 +25,6 @@ public class BlockGenerator : MonoBehaviour, IBlockSupplier {
 		foreach (Slot s in receivers) {
 			if (s.state == Slot.State.Empty) {
 				GiveBlock(s);
-				Debug.Log ("give");
 				generatedBlocks = true;	
 			}
 		}

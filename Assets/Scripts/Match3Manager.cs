@@ -6,6 +6,10 @@ public class Match3Manager : MonoBehaviour {
 	[SerializeField]
 	Board board;
 	// Use this for initialization
+	void Awake() {
+		LeanTween.init (800);
+	}
+
 	void Start () {
 		InitGame ();
 	}

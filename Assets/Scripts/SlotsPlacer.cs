@@ -34,28 +34,23 @@ public class SlotsPlacer : MonoBehaviour {
 	}
 		
 	void SetNeighbours(int current, int i, int j) {
-		if (i > 0 && i < squareSize - 1) {
-			slots [current].horizontalNeighbours = new Slot[] { slots [(i + 1) * squareSize + j],
-																slots [(i - 1) * squareSize + j]};
-		} else if (i == 0) {
-			slots [current].horizontalNeighbours = new Slot[] { slots [(i + 1) * squareSize + j] };
-		} else {
-			slots [current].horizontalNeighbours = new Slot[] { slots [(i - 1) * squareSize + j] };
+		if (i > 0) {
+			slots [current].down = slots [(i - 1) * squareSize + j];
 		}
-
-		if (j > 0 && j < squareSize - 1) {
-			slots [current].verticalNeighbours = new Slot[] { slots [current + 1], slots [current - 1]};
-		} else if (j == 0) {
-			slots [current].verticalNeighbours = new Slot[] { slots [current + 1] };
-		} else {
-			slots [current].verticalNeighbours = new Slot[] { slots [current - 1] };
+		if (i < squareSize - 1) {
+			slots [current].up = slots [(i + 1) * squareSize + j];
+		}
+		if (j > 0) {
+			slots [current].left = slots [current - 1];
+		}
+		if (j < squareSize - 1) {
+			slots [current].right = slots [current + 1];
 		}
 	}
 
 	void SetReceivers(int current, int i, int j) {
 		if (j > 0) {
-			slots [current].receivers = 
-				new Slot[] { slots [current - 1] };
+			slots [current].receivers = new Slot[] {slots [current - 1]};
 		}
 	}
 }
