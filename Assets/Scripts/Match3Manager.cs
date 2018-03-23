@@ -1,14 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Match3Manager : MonoBehaviour {
 	[SerializeField]
 	Board board;
+	[SerializeField]
+	Text pointsText;
 
 	Slot userSelection;
+	int points;
 
 	void Start () {
+		points = 0;
+		UpdatePointsText ();
+		PointsCounter.OnPointsGiven.AddListener (AddPoints);
 		RegisterToSlotClicks ();
 		InitGame ();
 	}
@@ -35,9 +42,17 @@ public class Match3Manager : MonoBehaviour {
 		}
 	}
 		
-
 	bool IsNeighbourWithSelected (Slot slot) {
 		return userSelection.down == slot || userSelection.up == slot ||
 		userSelection.right == slot || userSelection.left == slot;
+	}
+
+	void AddPoints(int addedPoints) {
+		points += (addedPoints * board.combo);
+		UpdatePointsText ();
+	}
+
+	void UpdatePointsText() {
+		pointsText.text = points.ToString ("D6");
 	}
 }

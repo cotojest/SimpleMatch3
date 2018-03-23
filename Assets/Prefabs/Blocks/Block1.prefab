@@ -53,6 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  pointValue: 5
 --- !u!212 &212386885237284032
 SpriteRenderer:
   m_ObjectHideFlags: 1

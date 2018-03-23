@@ -163,12 +163,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -254,7 +254,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 66
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &17591144
 GameObject:
@@ -306,12 +306,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -397,7 +397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &38518076
 GameObject:
@@ -449,12 +449,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -542,149 +542,6 @@ Transform:
   m_Father: {fileID: 1394421356}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &70915189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 70915193}
-  - component: {fileID: 70915192}
-  - component: {fileID: 70915190}
-  - component: {fileID: 70915191}
-  m_Layer: 0
-  m_Name: Slot49
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &70915190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 70915189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  right: {fileID: 107318185}
-  left: {fileID: 1534391931}
-  down: {fileID: 1960642787}
-  up: {fileID: 2009117008}
-  receivers:
-  - {fileID: 1960642787}
-  OnContentEmpty:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnBlockDestroyed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnReady:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  OnPointerUpEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  state: 0
---- !u!61 &70915191
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 70915189}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.08, y: 0.08, z: 0.08, w: 0.08}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 1
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &70915192
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 70915189}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 159709bc538104a329b60b7b07386209, type: 3}
-  m_Color: {r: 0.51870674, g: 0.532696, b: 0.5735294, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 1
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!4 &70915193
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 70915189}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.25, y: 4.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1394421356}
-  m_RootOrder: 49
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &107318184
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,11 +572,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   right: {fileID: 1407304461}
-  left: {fileID: 70915190}
+  left: {fileID: 0}
   down: {fileID: 1680555371}
   up: {fileID: 1972157791}
   receivers:
   - {fileID: 1680555371}
+  - {fileID: 1960642787}
   OnContentEmpty:
     m_PersistentCalls:
       m_Calls: []
@@ -735,12 +593,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -826,7 +684,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 58
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &109799902
 GameObject:
@@ -877,12 +735,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -968,7 +826,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 54
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &116547837
 GameObject:
@@ -1020,12 +878,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1111,7 +969,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 46
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &192600758
 GameObject:
@@ -1260,12 +1118,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1351,7 +1209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 68
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &306575634
 GameObject:
@@ -1403,12 +1261,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1545,12 +1403,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1636,7 +1494,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 63
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &434160304
 GameObject:
@@ -1688,12 +1546,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1888,12 +1746,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1979,7 +1837,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 56
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481494028
 GameObject:
@@ -2031,12 +1889,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -2174,12 +2032,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -2265,7 +2123,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 52
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &513531531
 GameObject:
@@ -2317,12 +2175,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -2408,150 +2266,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 44
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &582210623
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 582210627}
-  - component: {fileID: 582210626}
-  - component: {fileID: 582210624}
-  - component: {fileID: 582210625}
-  m_Layer: 0
-  m_Name: Slot41
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &582210624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 582210623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  right: {fileID: 2009117008}
-  left: {fileID: 942528662}
-  down: {fileID: 1534391931}
-  up: {fileID: 1471408252}
-  receivers:
-  - {fileID: 1534391931}
-  OnContentEmpty:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnBlockDestroyed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnReady:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  OnPointerUpEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  state: 0
---- !u!61 &582210625
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 582210623}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.08, y: 0.08, z: 0.08, w: 0.08}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 1
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &582210626
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 582210623}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 159709bc538104a329b60b7b07386209, type: 3}
-  m_Color: {r: 0.51870674, g: 0.532696, b: 0.5735294, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 1
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!4 &582210627
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 582210623}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2, y: 5.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1394421356}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &655472358
 GameObject:
@@ -2603,12 +2318,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -2694,150 +2409,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 76
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &704931537
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 704931541}
-  - component: {fileID: 704931540}
-  - component: {fileID: 704931538}
-  - component: {fileID: 704931539}
-  m_Layer: 0
-  m_Name: Slot31
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &704931538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 704931537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  right: {fileID: 1534391931}
-  left: {fileID: 1536614004}
-  down: {fileID: 1413935007}
-  up: {fileID: 942528662}
-  receivers:
-  - {fileID: 1413935007}
-  OnContentEmpty:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnBlockDestroyed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnReady:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  OnPointerUpEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  state: 0
---- !u!61 &704931539
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 704931537}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.08, y: 0.08, z: 0.08, w: 0.08}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 1
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &704931540
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 704931537}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 159709bc538104a329b60b7b07386209, type: 3}
-  m_Color: {r: 0.51870674, g: 0.532696, b: 0.5735294, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 1
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!4 &704931541
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 704931537}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1499999, y: 4.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1394421356}
-  m_RootOrder: 31
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &730336342
 GameObject:
@@ -2889,12 +2461,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -2980,7 +2552,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740806519
 GameObject:
@@ -3032,12 +2604,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -3123,7 +2695,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 77
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &741344337
 GameObject:
@@ -3175,12 +2747,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -3266,7 +2838,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 64
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &748360685
 GameObject:
@@ -3318,12 +2890,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -3409,7 +2981,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 74
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &753450996
 GameObject:
@@ -3461,12 +3033,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -3552,76 +3124,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 79
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &783012534
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 783012535}
-  - component: {fileID: 783012537}
-  - component: {fileID: 783012536}
-  m_Layer: 0
-  m_Name: Bg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &783012535
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 783012534}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2114427744}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &783012536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 783012534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.21905836, g: 0.188573, b: 0.341, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &783012537
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 783012534}
 --- !u!1 &811996198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,12 +3176,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -3763,7 +3267,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 47
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &869433834
 GameObject:
@@ -3815,12 +3319,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -3906,7 +3410,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 75
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &904899960
 GameObject:
@@ -3937,7 +3441,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 80
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &904899962
 BoxCollider2D:
@@ -3996,12 +3500,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -4080,12 +3584,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  right: {fileID: 582210624}
+  right: {fileID: 0}
   left: {fileID: 1176423489}
-  down: {fileID: 704931538}
+  down: {fileID: 0}
   up: {fileID: 730336343}
-  receivers:
-  - {fileID: 704931538}
+  receivers: []
   OnContentEmpty:
     m_PersistentCalls:
       m_Calls: []
@@ -4101,12 +3604,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -4192,7 +3695,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &952326981
 GameObject:
@@ -4244,12 +3747,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -4335,7 +3838,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959799209
 GameObject:
@@ -4387,12 +3890,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -4530,12 +4033,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -4621,7 +4124,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 65
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &990895396
 GameObject:
@@ -4673,12 +4176,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -4764,7 +4267,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 55
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &994584903
 GameObject:
@@ -4815,12 +4318,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -4906,7 +4409,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 45
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034044762
 GameObject:
@@ -4958,12 +4461,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -5049,7 +4552,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 43
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1042711344
 GameObject:
@@ -5101,12 +4604,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -5192,7 +4695,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 70
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073925535
 GameObject:
@@ -5243,12 +4746,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -5386,12 +4889,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -5477,7 +4980,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 71
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1126315265
 GameObject:
@@ -5529,12 +5032,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -5671,12 +5174,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -5814,12 +5317,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -5907,6 +5410,107 @@ Transform:
   m_Father: {fileID: 1394421356}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1175443324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1175443325}
+  - component: {fileID: 1175443327}
+  - component: {fileID: 1175443326}
+  - component: {fileID: 1175443328}
+  - component: {fileID: 1175443329}
+  m_Layer: 5
+  m_Name: ComboText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1175443325
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175443324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.00008, y: 1.00008, z: 1.00008}
+  m_Children: []
+  m_Father: {fileID: 1301096033}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -200}
+  m_SizeDelta: {x: 0, y: 100}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1175443326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175443324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8897059, g: 0.8319562, b: 0.05233564, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4506bf6ca285b494ab0993e12703d5e6, type: 3}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 60
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: COMBO x2
+--- !u!222 &1175443327
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175443324}
+--- !u!114 &1175443328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175443324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1175443329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175443324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0addaa911abf8a445b4a46c2af57e346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1176423488
 GameObject:
   m_ObjectHideFlags: 0
@@ -5957,12 +5561,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -6100,12 +5704,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -6243,12 +5847,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -6334,7 +5938,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 60
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1295520827
 GameObject:
@@ -6386,12 +5990,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -6479,6 +6083,41 @@ Transform:
   m_Father: {fileID: 1394421356}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1301096032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1301096033}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1301096033
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1301096032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1686401120}
+  - {fileID: 1175443325}
+  m_Father: {fileID: 2114427744}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 650, y: 1080}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &1303524092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6529,12 +6168,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -6711,6 +6350,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f712e5bb6790d2f44b6a166cb37967f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onComboChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1175443329}
+        m_MethodName: UpdateText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: IntEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!331 &1317418169
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -6804,12 +6458,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -6954,7 +6608,6 @@ Transform:
   - {fileID: 1861950772}
   - {fileID: 1303524096}
   - {fileID: 1413935010}
-  - {fileID: 704931541}
   - {fileID: 942528665}
   - {fileID: 730336346}
   - {fileID: 17591148}
@@ -6962,9 +6615,6 @@ Transform:
   - {fileID: 1979400353}
   - {fileID: 952326985}
   - {fileID: 1650617475}
-  - {fileID: 1996328740}
-  - {fileID: 1534391934}
-  - {fileID: 582210627}
   - {fileID: 1471408255}
   - {fileID: 1034044766}
   - {fileID: 513531535}
@@ -6972,7 +6622,6 @@ Transform:
   - {fileID: 116547841}
   - {fileID: 811996202}
   - {fileID: 1960642790}
-  - {fileID: 70915193}
   - {fileID: 2009117011}
   - {fileID: 1413783662}
   - {fileID: 490999316}
@@ -7071,12 +6720,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -7214,12 +6863,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -7305,7 +6954,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 62
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407304460
 GameObject:
@@ -7357,12 +7006,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -7448,7 +7097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 67
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413783658
 GameObject:
@@ -7500,12 +7149,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -7591,7 +7240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 51
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413935006
 GameObject:
@@ -7622,12 +7271,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  right: {fileID: 1996328737}
+  right: {fileID: 0}
   left: {fileID: 1945013738}
   down: {fileID: 1303524093}
-  up: {fileID: 704931538}
+  up: {fileID: 0}
   receivers:
   - {fileID: 1303524093}
+  - {fileID: 1650617472}
   OnContentEmpty:
     m_PersistentCalls:
       m_Calls: []
@@ -7643,12 +7293,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -7786,12 +7436,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -7929,12 +7579,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -8072,12 +7722,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -8163,7 +7813,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447562702
 GameObject:
@@ -8214,12 +7864,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -8305,7 +7955,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 72
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1456117064
 GameObject:
@@ -8357,12 +8007,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -8553,10 +8203,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   right: {fileID: 1413783659}
   left: {fileID: 730336343}
-  down: {fileID: 582210624}
+  down: {fileID: 0}
   up: {fileID: 1034044763}
-  receivers:
-  - {fileID: 582210624}
+  receivers: []
   OnContentEmpty:
     m_PersistentCalls:
       m_Calls: []
@@ -8572,12 +8221,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -8663,7 +8312,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 42
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1473449475
 GameObject:
@@ -8706,6 +8355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   board: {fileID: 1317418168}
+  pointsText: {fileID: 1686401121}
 --- !u!1 &1527758348
 GameObject:
   m_ObjectHideFlags: 0
@@ -8756,12 +8406,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -8847,150 +8497,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 78
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1534391930
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1534391934}
-  - component: {fileID: 1534391933}
-  - component: {fileID: 1534391931}
-  - component: {fileID: 1534391932}
-  m_Layer: 0
-  m_Name: Slot40
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1534391931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1534391930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  right: {fileID: 70915190}
-  left: {fileID: 704931538}
-  down: {fileID: 1996328737}
-  up: {fileID: 582210624}
-  receivers:
-  - {fileID: 1996328737}
-  OnContentEmpty:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnBlockDestroyed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnReady:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  OnPointerUpEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  state: 0
---- !u!61 &1534391932
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1534391930}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.08, y: 0.08, z: 0.08, w: 0.08}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 1
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &1534391933
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1534391930}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 159709bc538104a329b60b7b07386209, type: 3}
-  m_Color: {r: 0.51870674, g: 0.532696, b: 0.5735294, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 1
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!4 &1534391934
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1534391930}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2, y: 4.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1394421356}
-  m_RootOrder: 40
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1536614003
 GameObject:
@@ -9021,12 +8528,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  right: {fileID: 704931538}
+  right: {fileID: 0}
   left: {fileID: 1157394719}
   down: {fileID: 1945013738}
   up: {fileID: 1176423489}
   receivers:
   - {fileID: 1945013738}
+  - {fileID: 1413935007}
   OnContentEmpty:
     m_PersistentCalls:
       m_Calls: []
@@ -9042,12 +8550,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -9184,12 +8692,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -9327,12 +8835,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -9418,7 +8926,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 61
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1588472359
 GameObject:
@@ -9470,12 +8978,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -9613,12 +9121,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -9767,7 +9275,7 @@ MonoBehaviour:
   right: {fileID: 811996199}
   left: {fileID: 1303524093}
   down: {fileID: 952326982}
-  up: {fileID: 1996328737}
+  up: {fileID: 0}
   receivers:
   - {fileID: 952326982}
   OnContentEmpty:
@@ -9785,12 +9293,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -9876,7 +9384,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1653599944
 GameObject:
@@ -9928,12 +9436,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -10071,12 +9579,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -10162,7 +9670,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 57
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1684365321
 GameObject:
@@ -10214,12 +9722,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -10307,6 +9815,95 @@ Transform:
   m_Father: {fileID: 1394421356}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1686401119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1686401120}
+  - component: {fileID: 1686401122}
+  - component: {fileID: 1686401121}
+  - component: {fileID: 1686401123}
+  m_Layer: 5
+  m_Name: PointsText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1686401120
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686401119}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.00008, y: 1.00008, z: 1.00008}
+  m_Children: []
+  m_Father: {fileID: 1301096033}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: 0, y: 100}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1686401121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686401119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4506bf6ca285b494ab0993e12703d5e6, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 000000
+--- !u!222 &1686401122
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686401119}
+--- !u!114 &1686401123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686401119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: 2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1775119436
 GameObject:
   m_ObjectHideFlags: 0
@@ -10357,12 +9954,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -10500,12 +10097,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -10643,12 +10240,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -10786,12 +10383,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -10929,12 +10526,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -11020,7 +10617,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 69
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906855312
 GameObject:
@@ -11072,12 +10669,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -11163,7 +10760,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 73
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1945013737
 GameObject:
@@ -11215,12 +10812,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -11338,11 +10935,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   right: {fileID: 1680555371}
-  left: {fileID: 1996328737}
+  left: {fileID: 0}
   down: {fileID: 811996199}
-  up: {fileID: 70915190}
+  up: {fileID: 0}
   receivers:
   - {fileID: 811996199}
+  - {fileID: 1650617472}
   OnContentEmpty:
     m_PersistentCalls:
       m_Calls: []
@@ -11358,12 +10956,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -11449,7 +11047,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 48
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972157790
 GameObject:
@@ -11501,12 +11099,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -11592,7 +11190,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 59
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1979400349
 GameObject:
@@ -11643,12 +11241,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -11734,150 +11332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 36
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1996328736
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1996328740}
-  - component: {fileID: 1996328739}
-  - component: {fileID: 1996328737}
-  - component: {fileID: 1996328738}
-  m_Layer: 0
-  m_Name: Slot39
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1996328737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996328736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  right: {fileID: 1960642787}
-  left: {fileID: 1413935007}
-  down: {fileID: 1650617472}
-  up: {fileID: 1534391931}
-  receivers:
-  - {fileID: 1650617472}
-  OnContentEmpty:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnBlockDestroyed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnReady:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  OnPointerUpEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  state: 0
---- !u!61 &1996328738
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996328736}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.08, y: 0.08, z: 0.08, w: 0.08}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.6}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 1
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &1996328739
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996328736}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 159709bc538104a329b60b7b07386209, type: 3}
-  m_Color: {r: 0.51870674, g: 0.532696, b: 0.5735294, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 1
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!4 &1996328740
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996328736}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2, y: 3.1499999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1394421356}
-  m_RootOrder: 39
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2009117007
 GameObject:
@@ -11909,11 +11364,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   right: {fileID: 1972157791}
-  left: {fileID: 582210624}
-  down: {fileID: 70915190}
+  left: {fileID: 0}
+  down: {fileID: 0}
   up: {fileID: 1413783659}
-  receivers:
-  - {fileID: 70915190}
+  receivers: []
   OnContentEmpty:
     m_PersistentCalls:
       m_Calls: []
@@ -11929,12 +11383,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -12020,7 +11474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 50
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2015498045
 GameObject:
@@ -12134,12 +11588,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -12277,12 +11731,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  OnPointerDownEvent:
+  OnMoveBegin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  OnPointerUpEvent:
+  OnMoveEnd:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: SlotUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -12368,7 +11822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1394421356}
-  m_RootOrder: 53
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114427740
 GameObject:
@@ -12442,7 +11896,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 787616099
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &2114427744
@@ -12455,7 +11909,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 783012535}
+  - {fileID: 1301096033}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

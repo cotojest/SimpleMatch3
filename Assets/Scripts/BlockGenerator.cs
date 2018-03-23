@@ -42,9 +42,4 @@ public class BlockGenerator : MonoBehaviour, IBlockSupplier {
 		Block block = Instantiate (blockPrefabs[randomBlockIndex], transform, false);
 		return block;
 	}
-
-
-
-
-
 }
