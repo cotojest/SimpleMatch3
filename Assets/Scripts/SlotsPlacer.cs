@@ -35,16 +35,16 @@ public class SlotsPlacer : MonoBehaviour {
 		
 	void SetNeighbours(int current, int i, int j) {
 		if (i > 0) {
-			slots [current].down = slots [(i - 1) * squareSize + j];
+			slots [current].left = slots [(i - 1) * squareSize + j];
 		}
 		if (i < squareSize - 1) {
-			slots [current].up = slots [(i + 1) * squareSize + j];
+			slots [current].right = slots [(i + 1) * squareSize + j];
 		}
 		if (j > 0) {
-			slots [current].left = slots [current - 1];
+			slots [current].down = slots [current - 1];
 		}
 		if (j < squareSize - 1) {
-			slots [current].right = slots [current + 1];
+			slots [current].up = slots [current + 1];
 		}
 	}
 

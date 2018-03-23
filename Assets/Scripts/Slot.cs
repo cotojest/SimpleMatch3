@@ -4,17 +4,24 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
-public class Slot : MonoBehaviour, IBlockSupplier {
-	public Slot up;
-	public Slot down;
-	public Slot left;
+[System.Serializable]
+public class SlotUnityEvent : UnityEvent<Slot> {
+}
+
+public class Slot : MonoBehaviour, IBlockSupplier, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler {
 	public Slot right;
+	public Slot left;
+	public Slot down;
+	public Slot up;
 	public Slot[] receivers;
-	EventTrigger eventTrigger;
 	public UnityEvent OnContentEmpty;
 	public UnityEvent OnBlockDestroyed;
 	public UnityEvent OnReady;
+	public SlotUnityEvent OnMoveBegin;
+	public SlotUnityEvent OnMoveEnd;
+
 	public State state;
+	bool pressed;
 
 	public Block content {
 		get {
@@ -25,7 +32,6 @@ public class Slot : MonoBehaviour, IBlockSupplier {
 			if (value != null) {
 				FallingAnimation ();
 			} else {
-				Debug.Log (state);
 				state = State.Empty;
 				OnContentEmpty.Invoke();
 			}
@@ -33,19 +39,41 @@ public class Slot : MonoBehaviour, IBlockSupplier {
 	}
 	Block _content;
 
-	public void InitEvents(UnityAction<BaseEventData> onBeginDrag, 
-						UnityAction<BaseEventData> onEndDrag, 
-						UnityAction<BaseEventData> onClick) {
-		eventTrigger = GetComponent<EventTrigger> ();
-		AddEventTriggerEntry (EventTriggerType.BeginDrag, onBeginDrag);
-		AddEventTriggerEntry (EventTriggerType.EndDrag, onEndDrag);
-		AddEventTriggerEntry (EventTriggerType.PointerClick, onClick);
-	}
-
-	public void Awake() {
+	 void Awake() {
 		state = State.Empty;
 		foreach (Slot s in receivers) {
 			s.OnContentEmpty.AddListener(() => CheckReceivers());
+		}
+	}		
+
+	public void OnPointerUp(PointerEventData data) {
+		pressed = false;
+	}
+
+	public void OnPointerDown(PointerEventData data) {
+		pressed = true;
+		if (state == State.BlockReady) {
+			OnMoveBegin.Invoke (this);
+		}
+	}
+		
+	public void OnPointerExit(PointerEventData data) {
+		if (pressed && state == State.BlockReady) {
+			Vector2 pointerMovement = data.position - data.pressPosition;
+			if (Mathf.Abs (pointerMovement.x) > Mathf.Abs (pointerMovement.y)) {
+				if (right && pointerMovement.x > 0) {
+					OnMoveEnd.Invoke (right);
+				} else if (left){
+					OnMoveEnd.Invoke (left);
+				}
+			} else {
+				if (up && pointerMovement.y > 0) {
+					OnMoveEnd.Invoke (up);
+				} else if (down) {
+					OnMoveEnd.Invoke (down);
+				}
+			}
+			pressed = false;
 		}
 	}
 
@@ -68,13 +96,6 @@ public class Slot : MonoBehaviour, IBlockSupplier {
 		if (!CheckReceivers ()) {
 			OnReady.Invoke ();
 		};
-	}
-
-	private void AddEventTriggerEntry(EventTriggerType eventType, UnityAction<BaseEventData> action) {
-		EventTrigger.Entry newEntry = new EventTrigger.Entry ();
-		newEntry.eventID = eventType;
-		newEntry.callback.AddListener(action);
-		eventTrigger.triggers.Add (newEntry);
 	}
 		
 	public bool CheckReceivers() {

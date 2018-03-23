@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4295218249872338}
   - component: {fileID: 212321977148547338}
-  - component: {fileID: 114354138708744016}
   - component: {fileID: 114746965245067526}
+  - component: {fileID: 61099681314920222}
   m_Layer: 0
   m_Name: Slot
   m_TagString: Untagged
@@ -42,19 +42,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114354138708744016
-MonoBehaviour:
+--- !u!61 &61099681314920222
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944584801295068}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
-  delegates: []
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.08, y: 0.08, z: 0.08, w: 0.08}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!114 &114746965245067526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,14 +78,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82defbc2d7dad3747ab5435e89b1579a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalNeighbours: []
-  horizontalNeighbours: []
-  blockSuppliers: []
-  OnContentChange:
+  up: {fileID: 0}
+  down: {fileID: 0}
+  left: {fileID: 0}
+  right: {fileID: 0}
+  receivers: []
+  OnContentEmpty:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  OnBlockDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnReady:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  state: 0
 --- !u!212 &212321977148547338
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -109,7 +134,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 159709bc538104a329b60b7b07386209, type: 3}
-  m_Color: {r: 0.6544118, g: 0.56779844, b: 0.56779844, a: 1}
+  m_Color: {r: 0.51870674, g: 0.532696, b: 0.5735294, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
